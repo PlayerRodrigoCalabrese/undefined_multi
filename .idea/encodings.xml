@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/estaticos/Encriptador.kt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/estaticos/GestorSQL.kt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/estaticos/MainMultiservidor.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/estaticos/Mundo.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/login/LoginSocket.kt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/variables/Cuenta.kt" charset="windows-1252" />
+  </component>
+</project>

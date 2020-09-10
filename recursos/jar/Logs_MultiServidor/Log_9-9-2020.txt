@@ -1,0 +1,213 @@
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:3:25]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:3:25]  CONEXION SQL INVALIDA!!
+[12:3:25]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:3:26]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:3:26]  CONEXION SQL INVALIDA!!
+[12:3:26]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:3:26]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:3:26]  CONEXION SQL INVALIDA!!
+[12:3:26]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:3:26]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:3:26]  CONEXION SQL INVALIDA!!
+[12:3:26]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:3:26]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:3:26]  CONEXION SQL INVALIDA!!
+[12:3:26]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:3:26]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas?autoReconnect=true
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:3:26]  CONEXION SQL INVALIDA!!
+[12:3:26]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:11]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:11]  CONEXION SQL INVALIDA!!
+[12:5:11]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:11]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:11]  CONEXION SQL INVALIDA!!
+[12:5:11]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:11]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:11]  CONEXION SQL INVALIDA!!
+[12:5:11]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:11]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:11]  CONEXION SQL INVALIDA!!
+[12:5:11]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:25]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:25]  CONEXION SQL INVALIDA!!
+[12:5:25]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:25]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:25]  CONEXION SQL INVALIDA!!
+[12:5:25]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:25]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:25]  CONEXION SQL INVALIDA!!
+[12:5:25]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:26]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:26]  CONEXION SQL INVALIDA!!
+[12:5:26]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+[12:5:26]  ERROR SQL: java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost/undefined_cuentas
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at estaticos.GestorSQL.iniciarConexion(GestorSQL.java:100)
+	at estaticos.MainMultiservidor.main(MainMultiservidor.java:64)
+[12:5:26]  CONEXION SQL INVALIDA!!
+[12:5:26]  Error en la ventana de conexiones SQL:java.lang.NullPointerException
+java.lang.NullPointerException
+	at estaticos.GestorSQL.cerrarConexion(GestorSQL.java:90)
+	at estaticos.MainMultiservidor.cerrarServer(MainMultiservidor.java:224)
+	at java.base/java.lang.Thread.run(Unknown Source)
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
+---------- INICIO DEL MULTISERVIDOR ----------
