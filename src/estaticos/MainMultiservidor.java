@@ -117,7 +117,7 @@ public class MainMultiservidor {
 		try {
             String ARCHIVO_CONFIG = "config_MultiServidor.txt";
             final BufferedReader config = new BufferedReader(new FileReader(ARCHIVO_CONFIG));
-			String linea = "";
+			String linea;
 			ArrayList<String> comandos = new ArrayList<>();
 			while ((linea = config.readLine()) != null) {
 				try {
@@ -130,113 +130,39 @@ public class MainMultiservidor {
 					} else {
 						comandos.add(param);
 					}
+					// case "MAX_CONEXIONES_POR_IP" :
+					// MAX_CONEXIONES_POR_IP = Integer.parseInt(valor);
+					// break;
 					switch (param.toUpperCase()) {
-						case "ACTIVAR_CONSOLA" :
-							ACTIVAR_CONSOLA = valor.equalsIgnoreCase("true");
-							break;
-						case "MOSTRAR_ENVIADOS" :
-						case "ENVIADOS" :
-							MOSTRAR_ENVIOS = valor.equalsIgnoreCase("true");
-							break;
-						case "SINCRONIZADOS" :
-						case "MOSTRAR_SINCRONIZACION" :
-							MOSTRAR_SINCRONIZACION = valor.equalsIgnoreCase("true");
-							break;
-						case "MOSTRAR_RECIBIDOS" :
-						case "RECIBIDOS" :
-							MOSTRAR_RECIBIDOS = valor.equalsIgnoreCase("true");
-							break;
-						case "MODO_DEBUG" :
-							MODO_DEBUG = valor.equalsIgnoreCase("true");
-							break;
-						case "PARAM_ANTI_DDOS" :
-							PARAM_ANTI_DDOS = valor.equalsIgnoreCase("true");
-							break;
-						case "PARAM_INFO_STATUS_PHP" :
-							PARAM_INFO_STATUS_PHP = valor.equalsIgnoreCase("true");
-							break;
-						case "PARAM_MOSTRAR_IP" :
-							PARAM_MOSTRAR_IP = valor.equalsIgnoreCase("true");
-							break;
-						case "PARAM_MOSTRAR_EXCEPTIONS" :
-							PARAM_MOSTRAR_EXCEPTIONS = valor.equalsIgnoreCase("true");
-							break;
-						case "ACTIVAR_FILA_ESPERA" :
-							ACTIVAR_FILA_ESPERA = valor.equalsIgnoreCase("true");
-							break;
-						case "ACCESO_VIP" :
-							ACCESO_VIP = valor.equalsIgnoreCase("true");
-							break;
-						case "ENCRIPTAR_IP" :
-							ENCRIPTAR_IP = valor.equalsIgnoreCase("true");
-							break;
-						case "VERSION_CLIENTE" :
-							VERSION_CLIENTE = valor;
-							break;
-						case "PUERTO_MULTISERVER" :
-						case "PUERTO_MULTISERVIDOR" :
-							PUERTO_MULTISERVIDOR = Integer.parseInt(valor);
-							break;
-						case "PUERTO_SINCRONIZACION" :
-						case "PUERTO_SINCRONIZADOR" :
-							PUERTO_SINCRONIZADOR = Integer.parseInt(valor);
-							break;
-						case "BD_HOST" :
-							BD_HOST = valor;
-							break;
-						case "BD_USER" :
-						case "BD_USUARIO" :
-							BD_USUARIO = valor;
-							break;
-						case "BD_PASSWORD" :
-						case "BD_CONTRASEÑA" :
-						case "BD_PASS" :
-							BD_PASS = valor;
-							break;
-						case "BD_ACCOUNTS" :
-						case "BD_COMPTES" :
-						case "BD_CUENTAS" :
-						case "BD_LOGIN" :
-						case "BD_REALM" :
-							BD_CUENTAS = valor;
-							break;
-						case "MAX_CUENTAS_POR_IP" :
-							MAX_CUENTAS_POR_IP = Byte.parseByte(valor);
-							break;
-						// case "MAX_CONEXIONES_POR_IP" :
-						// MAX_CONEXIONES_POR_IP = Integer.parseInt(valor);
-						// break;
-						case "SEGUNDOS_PARA_EXPULSAR" :
-						case "SEGUNDOS_PARA_BANEAR" :
-							SEGUNDOS_PARA_EXPULSAR = Integer.parseInt(valor);
-							break;
-						case "SEGUNDOS_TRANSACCION_BD" :
-						case "TIEMPO_TRANSACCION_BD" :
-							SEGUNDOS_TRANSACCION_BD = Integer.parseInt(valor);
-							break;
-						case "SEGUNDOS_INFO_STATUS" :
-						case "TIEMPO_INFO_STATUS" :
-							SEGUNDOS_INFO_STATUS = Integer.parseInt(valor);
-							break;
-						case "SEGUNDOS_ESTADISTICAS" :
-							SEGUNDOS_ESTADISTICAS = Integer.parseInt(valor);
-							break;
-						case "MAX_CONEXION_POR_SEGUNDO" :
-						case "CONEXION_SEGUNDO" :
-							MAX_CONEXION_POR_SEGUNDO = (byte) (Byte.parseByte(valor) - 1);
-							break;
-						case "MILISEGUNDOS_SIG_CONEXION" :
-						case "TIEMPO_SIG_CONEXION" :
-							MILISEGUNDOS_SIG_CONEXION = Integer.parseInt(valor);
-							break;
-						case "ENABLED_MULTIACCOUNT" :
-						case "PERMITIR_MULTICUENTA" :
-							PERMITIR_MULTICUENTA = valor.equalsIgnoreCase("true");
-							break;
-						case "LIMITE_JUGADORES" :
-							LIMITE_JUGADORES = Short.parseShort(valor);
-							break;
-						case "CONFIG_SERVERS" :
+						case "ACTIVAR_CONSOLA" -> ACTIVAR_CONSOLA = valor.equalsIgnoreCase("true");
+						case "MOSTRAR_ENVIADOS", "ENVIADOS" -> MOSTRAR_ENVIOS = valor.equalsIgnoreCase("true");
+						case "SINCRONIZADOS", "MOSTRAR_SINCRONIZACION" -> MOSTRAR_SINCRONIZACION = valor.equalsIgnoreCase("true");
+						case "MOSTRAR_RECIBIDOS", "RECIBIDOS" -> MOSTRAR_RECIBIDOS = valor.equalsIgnoreCase("true");
+						case "MODO_DEBUG" -> MODO_DEBUG = valor.equalsIgnoreCase("true");
+						case "PARAM_ANTI_DDOS" -> PARAM_ANTI_DDOS = valor.equalsIgnoreCase("true");
+						case "PARAM_INFO_STATUS_PHP" -> PARAM_INFO_STATUS_PHP = valor.equalsIgnoreCase("true");
+						case "PARAM_MOSTRAR_IP" -> PARAM_MOSTRAR_IP = valor.equalsIgnoreCase("true");
+						case "PARAM_MOSTRAR_EXCEPTIONS" -> PARAM_MOSTRAR_EXCEPTIONS = valor.equalsIgnoreCase("true");
+						case "ACTIVAR_FILA_ESPERA" -> ACTIVAR_FILA_ESPERA = valor.equalsIgnoreCase("true");
+						case "ACCESO_VIP" -> ACCESO_VIP = valor.equalsIgnoreCase("true");
+						case "ENCRIPTAR_IP" -> ENCRIPTAR_IP = valor.equalsIgnoreCase("true");
+						case "VERSION_CLIENTE" -> VERSION_CLIENTE = valor;
+						case "PUERTO_MULTISERVER", "PUERTO_MULTISERVIDOR" -> PUERTO_MULTISERVIDOR = Integer.parseInt(valor);
+						case "PUERTO_SINCRONIZACION", "PUERTO_SINCRONIZADOR" -> PUERTO_SINCRONIZADOR = Integer.parseInt(valor);
+						case "BD_HOST" -> BD_HOST = valor;
+						case "BD_USER", "BD_USUARIO" -> BD_USUARIO = valor;
+						case "BD_PASSWORD", "BD_CONTRASEÑA", "BD_PASS" -> BD_PASS = valor;
+						case "BD_ACCOUNTS", "BD_COMPTES", "BD_CUENTAS", "BD_LOGIN", "BD_REALM" -> BD_CUENTAS = valor;
+						case "MAX_CUENTAS_POR_IP" -> MAX_CUENTAS_POR_IP = Byte.parseByte(valor);
+						case "SEGUNDOS_PARA_EXPULSAR", "SEGUNDOS_PARA_BANEAR" -> SEGUNDOS_PARA_EXPULSAR = Integer.parseInt(valor);
+						case "SEGUNDOS_TRANSACCION_BD", "TIEMPO_TRANSACCION_BD" -> SEGUNDOS_TRANSACCION_BD = Integer.parseInt(valor);
+						case "SEGUNDOS_INFO_STATUS", "TIEMPO_INFO_STATUS" -> SEGUNDOS_INFO_STATUS = Integer.parseInt(valor);
+						case "SEGUNDOS_ESTADISTICAS" -> SEGUNDOS_ESTADISTICAS = Integer.parseInt(valor);
+						case "MAX_CONEXION_POR_SEGUNDO", "CONEXION_SEGUNDO" -> MAX_CONEXION_POR_SEGUNDO = (byte) (Byte.parseByte(valor) - 1);
+						case "MILISEGUNDOS_SIG_CONEXION", "TIEMPO_SIG_CONEXION" -> MILISEGUNDOS_SIG_CONEXION = Integer.parseInt(valor);
+						case "ENABLED_MULTIACCOUNT", "PERMITIR_MULTICUENTA" -> PERMITIR_MULTICUENTA = valor.equalsIgnoreCase("true");
+						case "LIMITE_JUGADORES" -> LIMITE_JUGADORES = Short.parseShort(valor);
+						case "CONFIG_SERVERS" -> {
 							final String[] s = valor.split(";");
 							for (final String sx : s) {
 								try {
@@ -247,7 +173,7 @@ public class MainMultiservidor {
 									System.out.println("ERROR EN CONFIG_SERVER " + e.toString());
 								}
 							}
-							break;
+						}
 					}
 				} catch (Exception e) {}
 			}

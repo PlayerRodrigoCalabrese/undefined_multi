@@ -71,12 +71,12 @@ object Encriptador {
         '-',
         '_'
     ) // q = 16, N = 40, - = 63
-    const val ABC_MIN = "abcdefghijklmnopqrstuvwxyz"
-    const val ABC_MAY = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    const val VOCALES = "aeiouAEIOU"
-    const val CONSONANTES = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+    private const val ABC_MIN = "abcdefghijklmnopqrstuvwxyz"
+    private const val ABC_MAY = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    private const val VOCALES = "aeiouAEIOU"
+    private const val CONSONANTES = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
     const val NUMEROS = "0123456789"
-    const val GUIONES = "_-"
+    private const val GUIONES = "_-"
     fun palabraAleatorio(limite: Int): String {
         val nombre = StringBuilder()
         var i = floor(Math.random() * ABC_MAY.length).toInt()
@@ -136,14 +136,13 @@ object Encriptador {
     }
 
     fun desencriptarContraseña(contraseña: String, key: String): String {
-        var l1: Int
         var l2: Int
         var l3: Int
         var l4: Int
         var l5: Int
         val l7 = StringBuilder()
         val abecedario = ABC_MIN + ABC_MAY + GUIONES
-        l1 = 0
+        var l1: Int = 0
         while (l1 <= contraseña.length - 1) {
             l3 = key[l1 / 2].toInt()
             l2 = abecedario.indexOf(contraseña[l1])

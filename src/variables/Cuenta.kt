@@ -49,7 +49,7 @@ class Cuenta(val iD: Int, val nombre: String, apodo: String?) {
         _personajes[servidor] = cantidad
     }
 
-    val stringPersonajes: String
+    val stringPersonajes: String = ""
         get() = try {
             val str = StringBuilder()
             for ((key, value) in _personajes) {
@@ -62,7 +62,7 @@ class Cuenta(val iD: Int, val nombre: String, apodo: String?) {
         } catch (e: NullPointerException) {
             ""
         } catch (e: Exception) {
-            stringPersonajes
+            field
         }
 
 }

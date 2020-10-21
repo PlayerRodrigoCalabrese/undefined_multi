@@ -52,7 +52,7 @@ object GestorSQL {
         return declaracion
     }
 
-    fun TIMER(iniciar: Boolean) {
+    private fun TIMER(iniciar: Boolean) {
         if (iniciar) {
             timerComienzo = Timer()
             timerComienzo!!.schedule(
@@ -511,7 +511,7 @@ object GestorSQL {
         return str
     }
 
-    fun CAMBIAR_CONTRASEÑA_CUENTA(contraseña: String?, cuentaID: Int) {
+    private fun CAMBIAR_CONTRASEÑA_CUENTA(contraseña: String?, cuentaID: Int) {
         val consultaSQL = "UPDATE `cuentas` SET `contraseña`= ? WHERE `id`= ? ;"
         try {
             val declaracion = transaccionSQL(consultaSQL)

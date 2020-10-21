@@ -27,42 +27,19 @@ public class Mundo {
 	}
 
 	public static byte getComunidadIdioma(String idioma) {
-		switch (idioma.toLowerCase()) {
-			case "fr" :
-			case "ch" :
-			case "be" :
-			case "lu" :
-				return 0;
-			case "uk" :
-			case "ie" :
-			case "gb" :
-				return 1;
-			case "xx" :
-				return 2;
-			case "de" :
-			case "at" :
-			case "li" :
-				return 3;
-			case "es" :
-			case "ad" :
-			case "ar" :
-			case "ck" :
-			case "mx" :
-				return 4;
-			case "ru" :
-				return 5;
-			case "pt" :
-			case "br" :
-				return 6;
-			case "nl" :
-				return 7;
-			case "it" :
-				return 9;
-			case "jp" :
-				return 10;
-			default :
-				return 99;
-		}
+		return switch (idioma.toLowerCase()) {
+			case "fr", "ch", "be", "lu" -> (byte) 0;
+			case "uk", "ie", "gb" -> (byte) 1;
+			case "xx" -> (byte) 2;
+			case "de", "at", "li" -> (byte) 3;
+			case "es", "ad", "ar", "ck", "mx" -> (byte) 4;
+			case "ru" -> (byte) 5;
+			case "pt", "br" -> (byte) 6;
+			case "nl" -> (byte) 7;
+			case "it" -> (byte) 9;
+			case "jp" -> (byte) 10;
+			default -> (byte) 99;
+		};
 	}
 
 	public static String packetParaAH() {

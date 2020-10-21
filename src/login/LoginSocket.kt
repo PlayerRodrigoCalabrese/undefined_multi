@@ -12,7 +12,6 @@ import login.LoginServer.Companion.borrarCliente
 import login.LoginServer.Companion.borrarEscogerServer
 import variables.Cuenta
 import variables.Servidor
-import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import java.io.BufferedInputStream
 import java.io.IOException
@@ -31,7 +30,7 @@ class LoginSocket(socket: Socket?) : Runnable {
     private var _tipoPacket = "CLIENTE"
     var cuenta: Cuenta? = null
         private set
-    var _timerBan: Timer? = null
+    private var _timerBan: Timer? = null
     override fun run() {
         try {
             if (MainMultiservidor.SEGUNDOS_PARA_EXPULSAR > 0) {
@@ -39,7 +38,7 @@ class LoginSocket(socket: Socket?) : Runnable {
                     MainMultiservidor.SEGUNDOS_PARA_EXPULSAR * 1000,
                     ActionListener {
                         // GestorSQL.INSERT_BAN_IP(_IP);
-                        MainMultiservidor.escribirLog("LA IP " + iP + " ESTA ATACANDO EL MULTISERVIDOR")
+                        MainMultiservidor.escribirLog("LA IP $iP ESTA ATACANDO EL MULTISERVIDOR")
                         desconectar()
                     }
                 )
@@ -60,7 +59,7 @@ class LoginSocket(socket: Socket?) : Runnable {
                 if (bytes.size == index) {
                     val tempPacket = String(bytes, StandardCharsets.UTF_8)
                     for (packet in tempPacket.split("[\u0000\n\r]".toRegex()).toTypedArray()) {
-                        if (packet.isEmpty()) {
+                        if (packet.isEmpty) {
                             continue
                         }
                         if (MainMultiservidor.MOSTRAR_RECIBIDOS) {
@@ -96,7 +95,7 @@ class LoginSocket(socket: Socket?) : Runnable {
             ""
         } else "A" + cuenta!!.iD + ";" + iP
 
-    fun desconectar() {
+    private fun desconectar() {
         try {
             borrarEscogerServer(this)
             borrarCliente(this)
@@ -125,7 +124,7 @@ class LoginSocket(socket: Socket?) : Runnable {
     }
 
     private fun necesitaCompletarDatos(): Boolean {
-        return cuenta!!.actualizar.toInt() == 3 || GestorSQL.GET_APELLIDO(_nombreCuenta).isEmpty()
+        return cuenta!!.actualizar.toInt() == 3 || GestorSQL.GET_APELLIDO(_nombreCuenta).isEmpty
     }
 
     private fun analizar_Packet_Real(packet: String) {
@@ -266,7 +265,7 @@ class LoginSocket(socket: Socket?) : Runnable {
                         if (_timerBan != null) {
                             _timerBan!!.start()
                         }
-                        if (GestorSQL.GET_APODO(_nombreCuenta).isEmpty()) {
+                        if (GestorSQL.GET_APODO(_nombreCuenta).isEmpty) {
                             var apodo = Encriptador.palabraAleatorio(12)
                             while (GestorSQL.GET_APODO_EXISTE(apodo)) {
                                 apodo = Encriptador.palabraAleatorio(12)

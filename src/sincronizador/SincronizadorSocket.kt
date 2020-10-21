@@ -37,7 +37,7 @@ class SincronizadorSocket(socket: Socket?) : Runnable {
                 if (bytes.size == index) {
                     val tempPacket = String(bytes, StandardCharsets.UTF_8)
                     for (packet in tempPacket.split("[\u0000\n\r]".toRegex()).toTypedArray()) {
-                        if (packet.isEmpty()) {
+                        if (packet.isEmpty) {
                             continue
                         }
                         analizarPackets(packet)
@@ -55,7 +55,7 @@ class SincronizadorSocket(socket: Socket?) : Runnable {
         }
     }
 
-    fun analizarPackets(packet: String) {
+    private fun analizarPackets(packet: String) {
         try {
             when (packet[0]) {
                 'A' -> try {
@@ -115,12 +115,12 @@ class SincronizadorSocket(socket: Socket?) : Runnable {
     }
 
     fun estaCerrado(): Boolean {
-        return if (_socket == null || _socket!!.isClosed()) {
+        return if (_socket == null || _socket!!.isClosed) {
             true
         } else false
     }
 
-    fun desconectar() {
+    private fun desconectar() {
         try {
             if (_socket != null && !_socket!!.isClosed) {
                 _socket!!.close()
